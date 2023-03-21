@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, PostFormComponent, PostComponent],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
